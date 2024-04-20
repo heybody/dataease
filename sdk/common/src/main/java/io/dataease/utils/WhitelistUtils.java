@@ -63,6 +63,10 @@ public class WhitelistUtils {
                 || StringUtils.startsWithAny(requestURI, "/share/proxyInfo")
                 || StringUtils.startsWithAny(requestURI, "/xpackComponent/content/")
                 || StringUtils.startsWithAny(requestURI, "/geo/")
-                || StringUtils.startsWithAny(requestURI, "/map/");
+                || StringUtils.startsWithAny(requestURI, "/map/" )
+                || StringUtils.startsWithAny(requestURI, "/share/" )
+                || StringUtils.startsWithAny(requestURI, "/doc.html" )
+                || StringUtils.startsWithAny(requestURI, "/swagger-ui" )
+                || StringUtils.startsWithAny(requestURI, "/v3/api-docs/");
     }
 }
